@@ -28,3 +28,7 @@ steps:
     ConnectedServiceName: $(ConnectedServiceName)
     WebAppName: $(WebAppName)
     Package: '$(Build.ArtifactStagingDirectory)/Application$(Build.BuildId).zip'
+
+    ScriptType: Inline Script
+    InlineScript:
+      python -m pip install -r requirements.txt
