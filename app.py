@@ -8,7 +8,7 @@ app = flask.Flask(__name__)
 app.secret_key = 'development'
 
 AUTHORITY_URL = config.AUTHORITY_HOST_URL + '/' + config.TENANT
-HOST = 'https://boav5.azurewebsites.net'
+HOST = 'https://boav2-uat.azurewebsites.net'
 # HOST = 'http://localhost:5000'
 REDIRECT_URI = HOST + '/getAToken'
 TEMPLATE_AUTHZ_URL = ('https://login.microsoftonline.com/{}/oauth2/authorize?' +
